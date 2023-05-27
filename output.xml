@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.2 on win32)" generated="20230527 19:37:21.370" rpa="false" schemaversion="3">
+<suite id="s1" name="Task1" source="C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1.robot">
+<test id="s1-t1" name="task1 : kancil memakan ketimun" line="10">
+<kw name="Given Aku punya 5 ketimun" library="steps">
+<arg>${qty_ketimun}</arg>
+<kw name="Log" library="BuiltIn">
+<arg>aku membeli ketimun di pasar sebanyak ${qty_ketimun}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230527 19:37:21.448" level="INFO">aku membeli ketimun di pasar sebanyak 5</msg>
+<status status="PASS" starttime="20230527 19:37:21.448" endtime="20230527 19:37:21.448"/>
+</kw>
+<status status="PASS" starttime="20230527 19:37:21.447" endtime="20230527 19:37:21.449"/>
+</kw>
+<kw name="When Kancil datang" library="steps">
+<kw name="Log" library="BuiltIn">
+<arg>tiba-tiba kancil datang kerumah</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230527 19:37:21.450" level="INFO">tiba-tiba kancil datang kerumah</msg>
+<status status="PASS" starttime="20230527 19:37:21.450" endtime="20230527 19:37:21.450"/>
+</kw>
+<status status="PASS" starttime="20230527 19:37:21.449" endtime="20230527 19:37:21.450"/>
+</kw>
+<kw name="And Kancil ambil ketimun" library="steps">
+<arg>${give_ketimun}</arg>
+<kw name="Log" library="BuiltIn">
+<arg>kancil mengambil ketimun sebanyak ${give_ketimun}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230527 19:37:21.455" level="INFO">kancil mengambil ketimun sebanyak 2</msg>
+<status status="PASS" starttime="20230527 19:37:21.455" endtime="20230527 19:37:21.455"/>
+</kw>
+<status status="PASS" starttime="20230527 19:37:21.453" endtime="20230527 19:37:21.455"/>
+</kw>
+<kw name="Then Sisa ketimunku adalah" library="steps">
+<kw name="Evaluate" library="BuiltIn">
+<var>${left_ketimun}</var>
+<arg>${qty_ketimun}-${give_ketimun}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230527 19:37:21.456" level="INFO">${left_ketimun} = 3</msg>
+<status status="PASS" starttime="20230527 19:37:21.456" endtime="20230527 19:37:21.456"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Sisa ketimunku adalah ${left_ketimun}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230527 19:37:21.457" level="INFO">Sisa ketimunku adalah 3</msg>
+<status status="PASS" starttime="20230527 19:37:21.456" endtime="20230527 19:37:21.457"/>
+</kw>
+<status status="PASS" starttime="20230527 19:37:21.456" endtime="20230527 19:37:21.457"/>
+</kw>
+<status status="PASS" starttime="20230527 19:37:21.446" endtime="20230527 19:37:21.458"/>
+</test>
+<status status="PASS" starttime="20230527 19:37:21.371" endtime="20230527 19:37:21.461"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Task1">Task1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230527 19:37:21.397" level="ERROR">Error in file 'C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1.robot' on line 3: Importing library 'Builtin' failed: ModuleNotFoundError: No module named 'Builtin'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\Scripts\robot.exe
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\lib\site-packages</msg>
+<msg timestamp="20230527 19:37:21.402" level="ERROR">Error in file 'C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1.robot' on line 4: Importing library 'selenium' failed: ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\Scripts\robot.exe
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\lib\site-packages</msg>
+<msg timestamp="20230527 19:37:21.429" level="ERROR">Error in file 'C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\steps.resource' on line 3: Importing library 'Builtin' failed: ModuleNotFoundError: No module named 'Builtin'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\Scripts\robot.exe
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\lib\site-packages</msg>
+<msg timestamp="20230527 19:37:21.435" level="ERROR">Error in file 'C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\steps.resource' on line 4: Importing library 'selenium' failed: ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\Scripts\robot.exe
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\python310.zip
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\DLLs
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310\lib
+  C:\Users\riseh\AppData\Local\Programs\Python\Python310
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1
+  C:\Users\riseh\OneDrive\Desktop\QA studies\RBF_TASK1\task1\lib\site-packages</msg>
+</errors>
+</robot>
